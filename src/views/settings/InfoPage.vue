@@ -1,17 +1,7 @@
 <template>
-    <ion-page>
-        <!-- Kopfleiste -->
-        <ion-header>
-            <ion-toolbar>
-                 <ion-title>Konrad-Zuse-Schule</ion-title>
-                 <ion-buttons slot="start">
-                    <ion-back-button router-link="setting-page"></ion-back-button>
-                 </ion-buttons>
-            </ion-toolbar>
-        </ion-header>
-
-
-        <!-- Body bereich -->
+    <GlobalNavMenu />
+    <ion-page id="main-content">
+        <GlobalHeader />
         <ion-content>
             <ion-card>
                 <ion-card-header>
@@ -29,5 +19,5 @@
 import { IonPage, IonContent, IonCard, IonHeader, IonToolbar, IonCardHeader, 
     IonCardTitle, IonTitle, IonBackButton, IonButtons} from '@ionic/vue';
 
-
+import { GlobalHeader, GlobalNavMenu } from '../../components/navigation';
 </script>

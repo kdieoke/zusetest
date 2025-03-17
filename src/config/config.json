@@ -1,3 +1,4 @@
 {
-    "prefs_default_widgets": ["Döner", "Test", "Tost", "Klaus"]
+    "widgets": ["Döner", "Contacts", "Messages"],
+    "prefs_default_widgets": ["Döner", "Contacts", "Messages"]
 }

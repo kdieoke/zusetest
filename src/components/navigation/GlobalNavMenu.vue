@@ -2,7 +2,7 @@
     <ion-menu side="end" content-id="main-content">
         <ion-header>
             <ion-toolbar>
-                <ion-title>Menu Content</ion-title>
+                <ion-title>Navigation</ion-title>
             </ion-toolbar>
         </ion-header>
         <ion-content class="ion-padding">
