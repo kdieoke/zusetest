@@ -15,7 +15,7 @@
         <ion-content>
             <ion-card>
                 <ion-card-header>
-                    <ion-card-title>Designseite Test</ion-card-title>
+                    <ion-card-title>Widgets</ion-card-title>
                 </ion-card-header>
                 
             </ion-card>
