@@ -3,43 +3,43 @@
         <ion-col>
             <ion-card>
                 <ion-card-header>
-                    <ion-card-title>Öffnungszeiten Dönerladen</ion-card-title>
+                    <ion-card-title>{{ l.widgets_döner_title }}</ion-card-title>
                 </ion-card-header>
                 <ion-card-content>
                     <ion-grid>
                         <ion-row>
                             <ion-col>
-                                <ion-card-subtitle>Montag</ion-card-subtitle>
-                                <ion-card-subtitle>Geschlossen</ion-card-subtitle>
+                                <ion-card-subtitle> {{ l.weekdays_1 }}</ion-card-subtitle>
+                                <ion-card-subtitle> {{ l.widgets_döner_closed }}</ion-card-subtitle>
                             </ion-col>
                             <ion-col>
-                                <ion-card-subtitle>Dienstag</ion-card-subtitle>
+                                <ion-card-subtitle> {{ l.weekdays_2 }}</ion-card-subtitle>
                                 <ion-card-subtitle>10:00 - 22:00</ion-card-subtitle>
                             </ion-col>
                         </ion-row>
                         <ion-row>
                             <ion-col>
-                                <ion-card-subtitle>Mittwoch</ion-card-subtitle>
+                                <ion-card-subtitle>{{ l.weekdays_3 }}</ion-card-subtitle>
                                 <ion-card-subtitle>10:00 - 22:00</ion-card-subtitle>
                             </ion-col>
                             <ion-col>
-                                <ion-card-subtitle>Donnerstag</ion-card-subtitle>
-                                <ion-card-subtitle>10:00 - 22:00</ion-card-subtitle>
-                            </ion-col>
-                        </ion-row>
-                        <ion-row>
-                            <ion-col>
-                                <ion-card-subtitle>Freitag</ion-card-subtitle>
-                                <ion-card-subtitle>10:00 - 22:00</ion-card-subtitle>
-                            </ion-col>
-                            <ion-col>
-                                <ion-card-subtitle>Samstag</ion-card-subtitle>
+                                <ion-card-subtitle>{{ l.weekdays_4 }}</ion-card-subtitle>
                                 <ion-card-subtitle>10:00 - 22:00</ion-card-subtitle>
                             </ion-col>
                         </ion-row>
                         <ion-row>
                             <ion-col>
-                                <ion-card-subtitle>Sonntag</ion-card-subtitle>
+                                <ion-card-subtitle>{{ l.weekdays_5 }}</ion-card-subtitle>
+                                <ion-card-subtitle>10:00 - 22:00</ion-card-subtitle>
+                            </ion-col>
+                            <ion-col>
+                                <ion-card-subtitle>{{ l.weekdays_6 }}</ion-card-subtitle>
+                                <ion-card-subtitle>10:00 - 22:00</ion-card-subtitle>
+                            </ion-col>
+                        </ion-row>
+                        <ion-row>
+                            <ion-col>
+                                <ion-card-subtitle>{{ l.weekdays_7 }}</ion-card-subtitle>
                                 <ion-card-subtitle>12:00 - 21:00</ion-card-subtitle>
                             </ion-col>
                         </ion-row>
@@ -50,6 +50,17 @@
     </ion-row>
 </template>
 
+<script setup>
+    import { onMounted, ref} from 'vue';
+    import getTranslation from '../../translations/getTranslation.js';
+
+    let l = ref({});
+
+    onMounted(() => {
+        l.value = getTranslation(localStorage);
+        console.log(l);
+    })
+</script>
 
 <style scoped>
   ion-card {

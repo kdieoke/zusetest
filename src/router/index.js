@@ -3,7 +3,7 @@ import HomePage from '../views/HomePage.vue';
 import LoginPage from '../views/LoginPage.vue';
 import SettingsPage from '../views/SettingsPage.vue';
 import ProfilePage from '../views/settings/ProfilePage.vue';
-import NotificationPage from '../views/settings/NotificationPage.vue';
+import NotificationsPage from '../views/settings/NotificationsPage.vue';
 import LanguagePage from '../views/settings/LanguagePage.vue';
 import DesignPage from '../views/settings/DesignPage.vue';
 import InfoPage from '../views/settings/InfoPage.vue';
@@ -45,9 +45,9 @@ const routes = [
     component: ProfilePage
   },
   {
-    path: '/notification-page',
-    name: 'Notification',
-    component: NotificationPage
+    path: '/notifications-page',
+    name: 'Notifications',
+    component: NotificationsPage
   },
   {
     path: '/language-page',

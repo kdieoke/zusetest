@@ -33,7 +33,6 @@
     onMounted(() => {
         widgets = ref(getWidgets());
         console.log(getWidgets());
-
     });
 
     const getWidgets = () => {
