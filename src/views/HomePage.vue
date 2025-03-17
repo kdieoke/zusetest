@@ -5,7 +5,7 @@
         <ion-content>
             <ion-grid id="grid">
                 <Döner v-if="widgets.includes('Döner')" />
-                <Test v-if="widgets.includes('Test')"/>
+                <Mealplan v-if="widgets.includes('Mealplan')"/>
                 <Contacts v-if="widgets.includes('Contacts')"/>
                 <Messages v-if="widgets.includes('Messages')"/>
             </ion-grid>
@@ -21,9 +21,10 @@
     } from '@ionic/vue';
     import { onMounted, ref} from 'vue';
 
-    import { Contacts, Döner, Messages, Test } from '../components/widgets';
+    import { Contacts, Döner, Messages, Mealplan } from '../components/widgets';
     import { GlobalHeader, GlobalNavMenu } from '../components/navigation';
     import config from '../config/config.json';
+    
 
     let widgets = ref([]);
 
