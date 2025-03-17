@@ -27,6 +27,10 @@ const routes = [
     //meta: { requiresAuth: true }
   },
   {
+    path: '/settings',
+    redirect: '/setting-page'
+  },
+  {
     path: '/setting-page',
     name: 'Settings',
     component: SettingPage

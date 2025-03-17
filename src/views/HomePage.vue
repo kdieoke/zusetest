@@ -27,7 +27,7 @@
     import { IonGrid, IonRow, IonCol, IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle, IonPage, IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/vue';
     import { onMounted, ref} from 'vue';
     import Döner from '../components/DönerComp.vue';
-    import Test from '../components/testComp.vue';
+    import Test from '../components/ContactsComp.vue';
     import Tost from '../components/tostComp.vue';
     import Messages from '../components/MessagesComp.vue';
     let widgets = ref([]);

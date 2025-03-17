@@ -3,7 +3,7 @@
         <ion-col>
             <ion-card>
                 <ion-card-header>
-                    <ion-card-title>Öffnungszeiten Dönnerladen</ion-card-title>
+                    <ion-card-title>Wichtige Kontaktpersonen</ion-card-title>
                 </ion-card-header>
                 <ion-card-content>
                     <ion-grid>
