@@ -14,7 +14,11 @@
                     <br>
                     <ion-toggle alignment="center" :checked="widgets.includes('Contacts')"  @click="toggleWidget('Contacts')">Kontaktdaten</ion-toggle>
                     <br>
-                    <ion-toggle alignment="center" :checked="widgets.includes('Food')"  @click="toggleWidget('Food')">Speisekarte</ion-toggle>
+                    <ion-toggle alignment="center" :checked="widgets.includes('Mealplan')"  @click="toggleWidget('Mealplan')">Speisekarte</ion-toggle>
+                    <br>
+                    <ion-toggle alignment="center" :checked="widgets.includes('Classes')"  @click="toggleWidget('Classes')">Stundenplan</ion-toggle>
+                    <br>
+                    <ion-toggle alignment="center" :checked="widgets.includes('PT')"  @click="toggleWidget('PT')">Fahrzeiten</ion-toggle>
                     <br>
                 </ion-card-content>
             </ion-card>
