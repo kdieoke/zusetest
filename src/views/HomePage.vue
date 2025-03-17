@@ -6,7 +6,7 @@
             <ion-grid id="grid">
                 <Döner v-if="widgets.includes('Döner')" />
                 <Test v-if="widgets.includes('Test')"/>
-                <Tost v-if="widgets.includes('Tost')"/>
+                <Contacts v-if="widgets.includes('Contacts')"/>
                 <Messages v-if="widgets.includes('Messages')"/>
             </ion-grid>
         </ion-content>
