@@ -9,6 +9,7 @@ import DesignPage from '../views/settings/DesignPage.vue';
 import InfoPage from '../views/settings/InfoPage.vue';
 import HelpPage from '../views/settings/HelpPage.vue';
 import SafetyPage from '../views/settings/SafetyPage.vue';
+import HomeworkContent from '../views/HomeworkContent.vue';
 
 const routes = [
   {
@@ -73,6 +74,11 @@ const routes = [
     path: '/safety-page',
     name: 'Safety',
     component: SafetyPage
+  },
+  {
+    path :'/HomeWorkContent',
+    name:'HomeworkContent',
+    component: HomeworkContent
   }
 ]
 

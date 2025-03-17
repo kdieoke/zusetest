@@ -20,6 +20,8 @@
                     <br>
                     <ion-toggle alignment="center" :checked="widgets.includes('PT')"  @click="toggleWidget('PT')">Fahrzeiten</ion-toggle>
                     <br>
+                    <ion-toggle alignment="center" :checked="widgets.includes('Homework')"  @click="toggleWidget('Homework')">Hausaufgaben</ion-toggle>
+                    <br>
                 </ion-card-content>
             </ion-card>
         </ion-content>

@@ -4,5 +4,6 @@ import Messages from './widgets/Messages.vue';
 import Mealplan from './widgets/Mealplan.vue';
 import Classes from './widgets/Classes.vue';
 import PT from './widgets/PT.vue';
+import Homework from './widgets/Homework.vue';
 
-export { Contacts, Döner, Messages, Mealplan, Classes, PT};
+export { Contacts, Döner, Messages, Mealplan, Classes, PT, Homework};
