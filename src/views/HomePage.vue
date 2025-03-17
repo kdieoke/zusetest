@@ -9,6 +9,7 @@
                 <Contacts v-if="widgets.includes('Contacts')"/>
                 <Messages v-if="widgets.includes('Messages')"/>
                 <Classes v-if="widgets.includes('Classes')"/>
+                <PT v-if="widgets.includes('PT')"/>
             </ion-grid>
         </ion-content>
     </ion-page>
@@ -22,7 +23,7 @@
     } from '@ionic/vue';
     import { onMounted, ref} from 'vue';
 
-    import { Contacts, Döner, Messages, Mealplan, Classes } from '../components/widgets';
+    import { Contacts, Döner, Messages, Mealplan, Classes, PT} from '../components/widgets';
     import { GlobalHeader, GlobalNavMenu } from '../components/navigation';
     import config from '../config/config.json';
     
