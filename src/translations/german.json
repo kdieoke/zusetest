@@ -7,6 +7,9 @@
     "widgets_döner_closed": "Geschlossen",
     "widgets_mealplan_title": "Speisekarte Mensa",
     "widgets_messages_title": "Nachrichten",
+    "widgets_classes_title": "Stundenplan",
+    "widgets_pt_title": "Öffentliche Verkehrsmittel",
+    "widgets_pt_text": "Hier klicken, um die Fahrzeiten anzuzeigen.",
 
     "weekdays_1": "Montag",
     "weekdays_2": "Dienstag",

@@ -7,6 +7,9 @@
     "widgets_döner_closed": "Closed",
     "widgets_mealplan_title": "Mealplan",
     "widgets_messages_title": "Messages",
+    "widgets_classes_title": "Classes",
+    "widgets_pt_title": "Public transport",
+    "widgets_pt_text": "Click here to see the public transport schedule.",
 
     "weekdays_1": "Monday",
     "weekdays_2": "Tuesday",

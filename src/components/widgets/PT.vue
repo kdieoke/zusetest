@@ -3,16 +3,26 @@
       <ion-col>
           <ion-card>
               <ion-card-header>
-                  <ion-card-title>Öffentliche Verkehrsmittel</ion-card-title>
+                  <ion-card-title>{{ l.widgets_pt_title }}</ion-card-title>
               </ion-card-header>
               <ion-card-content>
-                  Click hier um zu den Fahrzeiten zu Kommen
+                  {{ l.widgets_pt_text }}
               </ion-card-content>
           </ion-card>
       </ion-col>
   </ion-row>
 </template>
 
+<script setup>
+    import { onMounted, ref} from 'vue';    
+    import getTranslation from '../../translations/getTranslation.js';
+
+    let l = ref({});
+
+    onMounted(() => {
+        l.value = getTranslation(localStorage);
+    })
+</script>
 
 <style scoped>
   ion-card {

@@ -3,7 +3,7 @@
       <ion-col>
           <ion-card>
               <ion-card-header>
-                  <ion-card-title>Stundenplan</ion-card-title>
+                  <ion-card-title>{{ l.widgets_classes_title }}</ion-card-title>
               </ion-card-header>
               <ion-card-content>
                   Nächste Stunde:
@@ -13,6 +13,17 @@
   </ion-row>
 </template>
 
+<script setup>
+  import { onMounted, ref} from 'vue';
+  import getTranslation from '../../translations/getTranslation.js';
+
+  let l = ref({});
+
+  onMounted(() => {
+      l.value = getTranslation(localStorage);
+      console.log(l);
+  })
+</script>
 
 <style scoped>
   ion-card {
