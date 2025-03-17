@@ -3,7 +3,7 @@
         <ion-col>
             <ion-card>
                 <ion-card-header>
-                    <ion-card-title>Öffnungszeiten Dönerladen</ion-card-title>
+                    <ion-card-title> {{ l.widgets_mealplan_title }}</ion-card-title>
                 </ion-card-header>
                 <ion-card-content>
                     <ion-grid>
@@ -44,6 +44,17 @@
     </ion-row>
 </template>
 
+<script setup>
+    import { onMounted, ref} from 'vue';
+    import getTranslation from '../../translations/getTranslation.js';
+
+    let l = ref({});
+
+    onMounted(() => {
+        l.value = getTranslation(localStorage);
+        console.log(l);
+    })
+</script>
 
 <style scoped>
   ion-card {

@@ -3,20 +3,16 @@
     <ion-page id="main-content">
         <GlobalHeader />
         <ion-content>
-            <ion-card>
-                <ion-card-header>
-                    <ion-card-title>{{ l.settings_help_title }}</ion-card-title>
-                </ion-card-header>
-                
-            </ion-card>
-
+            <ion-list>
+                <ion-item :button="true">{{ l.settings_notifications_title }}</ion-item>
+            </ion-list>
 
         </ion-content>
     </ion-page>
 </template>
 
 <script setup>
-    import { IonPage, IonContent, IonCard, IonHeader, IonToolbar, IonCardHeader, IonCardTitle, IonTitle, IonBackButton, IonButtons} from '@ionic/vue';
+    import { IonPage, IonContent, IonList, IonHeader, IonToolbar, IonTitle, IonItem, IonButtons, IonBackButton} from '@ionic/vue';
     import { GlobalHeader, GlobalNavMenu } from '../../components/navigation';
     import { onMounted, ref} from 'vue';
     import getTranslation from '../../translations/getTranslation.js';

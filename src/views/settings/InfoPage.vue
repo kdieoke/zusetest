@@ -5,7 +5,7 @@
         <ion-content>
             <ion-card>
                 <ion-card-header>
-                    <ion-card-title>Infoseite Test</ion-card-title>
+                    <ion-card-title>{{ l.settings_info_title }}</ion-card-title>
                 </ion-card-header>
                 
             </ion-card>
@@ -16,8 +16,15 @@
 </template>
 
 <script setup>
-import { IonPage, IonContent, IonCard, IonHeader, IonToolbar, IonCardHeader, 
-    IonCardTitle, IonTitle, IonBackButton, IonButtons} from '@ionic/vue';
+    import { IonPage, IonContent, IonCard, IonHeader, IonToolbar, IonCardHeader, IonCardTitle, IonTitle, IonBackButton, IonButtons} from '@ionic/vue';
+    import { GlobalHeader, GlobalNavMenu } from '../../components/navigation';
+    import { onMounted, ref} from 'vue';
+    import getTranslation from '../../translations/getTranslation.js';
 
-import { GlobalHeader, GlobalNavMenu } from '../../components/navigation';
+    let l = ref({});
+
+    onMounted(() => {
+        l.value = getTranslation(localStorage);
+        console.log(l);
+    })
 </script>

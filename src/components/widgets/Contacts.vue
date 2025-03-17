@@ -3,13 +3,13 @@
         <ion-col>
             <ion-card>
                 <ion-card-header>
-                    <ion-card-title>Wichtige Kontaktdaten</ion-card-title>
+                    <ion-card-title>{{ l.widgets_contacts_title }}</ion-card-title>
                 </ion-card-header>
                 <ion-card-content>
                     <ion-grid>
                         <ion-row>
                             <ion-col>
-                                <ion-card-subtitle>Montag - Donnerstag</ion-card-subtitle>
+                                <ion-card-subtitle>{{ `${l.weekdays_1} - ${l.weekdays_4}` }}</ion-card-subtitle>
                                 <ion-card-subtitle>7:30 - 12:00</ion-card-subtitle>
                                 <ion-card-subtitle>13:00 - 15:00</ion-card-subtitle>
                             </ion-col>
@@ -21,7 +21,7 @@
                         </ion-row>
                         <ion-row>
                             <ion-col>
-                                <ion-card-subtitle>Freitag</ion-card-subtitle>
+                                <ion-card-subtitle>{{  l.weekdays_5 }}</ion-card-subtitle>
                                 <ion-card-subtitle>7:30 - 15:00</ion-card-subtitle>
                             </ion-col>
                         </ion-row>
@@ -32,6 +32,18 @@
     </ion-row>
 </template>
 
+
+<script setup>
+    import { onMounted, ref} from 'vue';
+    import getTranslation from '../../translations/getTranslation.js';
+
+    let l = ref({});
+
+    onMounted(() => {
+        l.value = getTranslation(localStorage);
+        console.log(l);
+    })
+</script>
 
 <style scoped>
   ion-card {
