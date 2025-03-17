@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from '@ionic/vue-router';
 import HomePage from '../views/HomePage.vue';
 import LoginPage from '../views/LoginPage.vue';
-import SettingPage from '../views/SettingPage.vue';
+import SettingsPage from '../views/SettingsPage.vue';
 import ProfilePage from '../views/settings/ProfilePage.vue';
 import NotificationPage from '../views/settings/NotificationPage.vue';
 import LanguagePage from '../views/settings/LanguagePage.vue';
@@ -21,6 +21,10 @@ const routes = [
     component: LoginPage
   },
   {
+    path: '/home',
+    redirect: '/home-page'
+  },
+  {
     path: '/home-page',
     name: 'Home',
     component: HomePage, 
@@ -28,12 +32,12 @@ const routes = [
   },
   {
     path: '/settings',
-    redirect: '/setting-page'
+    redirect: '/settings-page'
   },
   {
-    path: '/setting-page',
+    path: '/settings-page',
     name: 'Settings',
-    component: SettingPage
+    component: SettingsPage
   },
   {
     path: '/profile-page',
