@@ -21,7 +21,6 @@
 
   onMounted(() => {
       l.value = getTranslation(localStorage);
-      console.log(l);
   })
 </script>
 
